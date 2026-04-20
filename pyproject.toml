@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telos"
+version = "0.1.0"
+description = "Life auto-navigation methodology for Claude Code"
+requires-python = ">=3.11"
+authors = [{name = "zwbao", email = "zwbao1996@gmail.com"}]
+license = {text = "MIT"}
+
+[tool.setuptools]
+packages = ["lib"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["lib", "hooks"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+fail_under = 80
