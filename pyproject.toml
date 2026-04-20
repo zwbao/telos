@@ -22,7 +22,9 @@ python_files = ["test_*.py"]
 addopts = "-v --tb=short"
 
 [tool.coverage.run]
-source = ["lib", "hooks"]
+# hooks/ are tested via subprocess integration tests (coverage can't see child
+# processes). lib/ contains the business logic and is measured here.
+source = ["lib"]
 omit = ["tests/*"]
 
 [tool.coverage.report]
