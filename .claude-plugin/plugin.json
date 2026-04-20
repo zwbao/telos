@@ -1,0 +1,21 @@
+{
+  "name": "telos",
+  "version": "0.1.0",
+  "description": "Life auto-navigation methodology for Claude Code — declare your telos, consult it at decision points, log life against it.",
+  "author": {
+    "name": "zwbao",
+    "email": "zwbao1996@gmail.com"
+  },
+  "homepage": "https://github.com/zwbao/telos",
+  "repository": "https://github.com/zwbao/telos",
+  "license": "MIT",
+  "keywords": [
+    "life",
+    "navigation",
+    "methodology",
+    "telos",
+    "decision-support",
+    "journaling",
+    "mindfulness"
+  ]
+}
